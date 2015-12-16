@@ -137,7 +137,7 @@ if [[ $SYSTEM_GCC -eq 0 ]]; then
 
   FULL_LPATH="-L$BUILD_DIR/gcc-$GCC_VERSION/lib64"
   LDFLAGS="$ARCH_FLAGS $FULL_RPATH $FULL_LPATH"
-  CXXFLAGS="$ARCH_FLAGS -static-libstdc++ -fPIC -O3 -m64"
+  CXXFLAGS="$ARCH_FLAGS -fPIC -O3 -m64"
 else
   CXX="g++ -stdlib=libstdc++"
   LDFLAGS="$ARCH_FLAGS"
